@@ -42,8 +42,24 @@
 
       <div id="movieGrid" class="movie-grid"></div>
     </section>
-  </body>
 
-  <footer class="footer-box">Footer</footer>
-  
+    <footer class="footer-box">Footer</footer>
+    
+    <!-- Add Movie Modal -->
+    <div id="addModal" class="modal">
+        <div class="modal-content">
+            <h2>Add Movie</h2>
+
+            <input type="text" id="movieId" placeholder="Movie ID">
+            <input type="text" id="movieTitle" placeholder="Movie Title">
+            <input type="number" id="movieYear" placeholder="Year">
+            <input type="number" id="movieRating" placeholder="Rating (1–10)">
+
+            <button id="saveMovieBtn">Save Movie</button>
+            <button id="closeModalBtn">Close</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>
