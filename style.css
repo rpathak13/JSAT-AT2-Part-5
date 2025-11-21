@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  background: #000000;
+  color: white;
+}
+
+.title-box{
+  text-align: center;
+  background-color: #D27CDA;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.section-box {
+    background: #999;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
