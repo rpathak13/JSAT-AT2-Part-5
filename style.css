@@ -1,13 +1,13 @@
 body {
   margin: 280px;
   margin-top: 0;
-  background: #000000;
+  background: #121212;
   color: white;
 }
 
 .title-box {
   text-align: center;
-  background-color: oklch(40.8% 0.153 2.432); /*Pink 900 */
+  background-color: #1F1F1F; 
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
@@ -15,7 +15,7 @@ body {
 }
 
 .section-box {
-  background: #f60588; /*Pink 900 */
+  background: #1F1F1F; 
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -56,7 +56,6 @@ body {
 
 .action-bar button {
     width: 30%;
-    background-color: #f7b2d8;
 }
 
 .sort-bar {
@@ -71,4 +70,39 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+}
+
+.movie-card {
+    background: #ccc;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer-box {
+    background: #777;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #eee;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
 }
