@@ -1,12 +1,13 @@
 body {
-  margin: 0;
+  margin: 280px;
+  margin-top: 0;
   background: #000000;
   color: white;
 }
 
 .title-box {
   text-align: center;
-  background-color: #d27cda;
+  background-color: oklch(40.8% 0.153 2.432); /*Pink 900 */
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
@@ -14,7 +15,7 @@ body {
 }
 
 .section-box {
-  background: #999;
+  background: #f60588; /*Pink 900 */
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -55,4 +56,19 @@ body {
 
 .action-bar button {
     width: 30%;
+    background-color: #f7b2d8;
+}
+
+.sort-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
