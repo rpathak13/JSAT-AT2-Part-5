@@ -4,17 +4,55 @@ body {
   color: white;
 }
 
-.title-box{
+.title-box {
   text-align: center;
-  background-color: #D27CDA;
+  background-color: #d27cda;
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
+  /* width: 60%; */
 }
 
 .section-box {
-    background: #999;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
+  background: #999;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.section-box h2 {
+  text-align: center;
+}
+
+.section-box input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 5px;
+  border: none;
+}
+
+.section-box button {
+  width: 60%;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  border-radius: 5px;
+  border: none;
+  /* color: aqua; */
+
+  &:hover{
+    color: #d27cda;
+    cursor: pointer;
+  }
+}
+
+.action-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.action-bar button {
+    width: 30%;
 }

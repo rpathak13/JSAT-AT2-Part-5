@@ -11,7 +11,7 @@
     <header class="title-box">
       <h1>My Movie List</h1>
     </header>
-
+    <!-- Search Section -->
     <section class="section-box">
       <h2>Search For Movies</h2>
       <input type="text" id="searchTitle" placeholder="Search by title" />
@@ -21,5 +21,29 @@
 
       <div id="searchResults"></div>
     </section>
+
+    <!-- Action Buttons -->
+    <section class="section-box action-bar">
+      <button id="addMovieBtn">Add Movie</button>
+      <button id="deleteMovieBtn">Delete Movie</button>
+      <button id="updateMovieBtn">Update Movie</button>
+    </section>
+
+    <!-- Movie List Section -->
+    <section class="section-box">
+      <h2>Movie List</h2>
+
+      <div class="sort-bar">
+        <button id="sortAZBtn">Sort A - Z</button>
+        <button id="sortZABtn">Sort Z - A</button>
+        <button id="sortBestBtn">Sort by Best</button>
+        <button id="refreshBtn">Refresh</button>
+      </div>
+
+      <div id="movieGrid" class="movie-grid"></div>
+    </section>
   </body>
+
+  <footer class="footer-box">Footer</footer>
+  
 </html>
