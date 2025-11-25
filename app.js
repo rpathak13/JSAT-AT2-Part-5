@@ -160,5 +160,21 @@ document.getElementById("sortBestBtn").onclick = () => {
 // Refresh button
 document.getElementById("refreshBtn").onclick = renderMovies;
 
+// Coming soon alert.
+document.addEventListener("DOMContentLoaded", () => {
+
+    const deleteBtn = document.getElementById("deleteMovieBtn");
+    const updateBtn = document.getElementById("updateMovieBtn");
+
+    deleteBtn.addEventListener("click", () => {
+        alert("Feature coming soon!");
+    });
+
+    updateBtn.addEventListener("click", () => {
+        alert("Feature coming soon!");
+    });
+
+});
+
 // Initial page load
 renderMovies();
