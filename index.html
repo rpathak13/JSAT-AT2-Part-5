@@ -1,65 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Movie App - Rudra</title>
-  </head>
-  <body>
-    <!-- Creating Header -->
-    <header class="title-box">
-      <h1>My Movie List</h1>
-    </header>
-    <!-- Search Section -->
-    <section class="section-box">
-      <h2>Search For Movies</h2>
-      <input type="text" id="searchTitle" placeholder="Search by title" />
-      <input type="text" id="searchId" placeholder="Search by ID" />
 
-      <button id="searchBtn">Search</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Movie App - Rudra</title>
+</head>
 
-      <div id="searchResults"></div>
-    </section>
+<body>
+  <!-- Creating Header -->
+  <header class="title-box">
+    <h1>My Movie List</h1>
+  </header>
+  <!-- Search Section -->
+  <section class="section-box">
+    <h2>Search For Movies</h2>
+    <input type="text" id="searchTitle" placeholder="Search by title" />
+    <input type="text" id="searchId" placeholder="Search by ID" />
 
-    <!-- Action Buttons -->
-    <section class="section-box action-bar">
-      <button id="addMovieBtn">Add Movie</button>
-      <button id="deleteMovieBtn">Delete Movie</button>
-      <button id="updateMovieBtn">Update Movie</button>
-    </section>
+    <button id="searchBtn">Search</button>
 
-    <!-- Movie List Section -->
-    <section class="section-box">
-      <h2>Movie List</h2>
+    <div id="searchResults"></div>
+  </section>
 
-      <div class="sort-bar">
-        <button id="sortAZBtn">Sort A - Z</button>
-        <button id="sortZABtn">Sort Z - A</button>
-        <button id="sortBestBtn">Sort by Best</button>
-        <button id="refreshBtn">Refresh</button>
-      </div>
+  <!-- Action Buttons -->
+  <section class="section-box action-bar">
+    <button id="addMovieBtn">Add Movie</button>
+    <button id="deleteMovieBtn">Delete Movie</button>
+    <button id="updateMovieBtn">Update Movie</button>
+  </section>
 
-      <div id="movieGrid" class="movie-grid"></div>
-    </section>
+  <!-- Movie List Section -->
+  <section class="section-box">
+    <h2>Movie List</h2>
 
-    <footer class="footer-box">Footer</footer>
-    
-    <!-- Add Movie Modal -->
-    <div id="addModal" class="modal">
-        <div class="modal-content">
-            <h2>Add Movie</h2>
-
-            <input type="text" id="movieId" placeholder="Movie ID">
-            <input type="text" id="movieTitle" placeholder="Movie Title">
-            <input type="number" id="movieYear" placeholder="Year">
-            <input type="number" id="movieRating" placeholder="Rating (1–10)">
-
-            <button id="saveMovieBtn">Save Movie</button>
-            <button id="closeModalBtn">Close</button>
-        </div>
+    <div class="sort-bar">
+      <button id="sortAZBtn">Sort A - Z</button>
+      <button id="sortZABtn">Sort Z - A</button>
+      <button id="sortBestBtn">Sort by Best</button>
+      <button id="refreshBtn">Refresh</button>
     </div>
 
-    <script src="app.js"></script>
-  </body>
+    <div id="movieGrid" class="movie-grid"></div>
+  </section>
+
+  <footer class="footer-box">Footer</footer>
+
+  <!-- Add Movie Modal -->
+  <div id="addModal" class="modal">
+    <div class="modal-content">
+      <h2>Add Movie</h2>
+
+      <input type="text" id="movieId" placeholder="Movie ID">
+      <input type="text" id="movieTitle" placeholder="Movie Title">
+      <input type="number" id="movieYear" placeholder="Year">
+      <input type="number" id="movieRating" placeholder="Rating (1–10)">
+
+      <button id="saveMovieBtn">Save Movie</button>
+      <button id="closeModalBtn">Close</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
 </html>
