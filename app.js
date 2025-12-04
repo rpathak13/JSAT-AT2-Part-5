@@ -1,4 +1,10 @@
+<<<<<<< Updated upstream
 // Movie Class
+=======
+// -----------------------------
+// Movie Class
+// -----------------------------
+>>>>>>> Stashed changes
 class Movie {
     constructor(id, title, year, rating) {
         this.id = id;
@@ -8,6 +14,7 @@ class Movie {
     }
 }
 
+<<<<<<< Updated upstream
 // Default Movies (From part 4)
 const defaultMovies = [
     { id: 1, title: "Inception", year: 2010, rating: 8 },
@@ -26,6 +33,21 @@ const defaultMovies = [
 
 
 // Movie List Class
+=======
+// -----------------------------
+// Default Movies
+// -----------------------------
+const defaultMovies = [
+    { id: 1, title: "Inception", year: 2010, rating: 9 },
+    { id: 2, title: "The Dark Knight", year: 2008, rating: 10 },
+    { id: 3, title: "Interstellar", year: 2014, rating: 9 },
+    { id: 4, title: "The Matrix", year: 1999, rating: 9 }
+];
+
+// -----------------------------
+// Movie List Class
+// -----------------------------
+>>>>>>> Stashed changes
 class MovieList {
     constructor() {
         this.movies = [];
@@ -69,8 +91,14 @@ defaultMovies.forEach(m => {
     movieList.add(new Movie(m.id, m.title, m.year, m.rating));
 });
 
+<<<<<<< Updated upstream
 
 // UI Rendering
+=======
+// -----------------------------
+// UI Rendering
+// -----------------------------
+>>>>>>> Stashed changes
 function renderMovies() {
     const grid = document.getElementById("movieGrid");
     grid.innerHTML = "";
@@ -87,8 +115,14 @@ function renderMovies() {
     });
 }
 
+<<<<<<< Updated upstream
 
 // MODAL CONTROLS
+=======
+// -----------------------------
+// MODAL CONTROLS
+// -----------------------------
+>>>>>>> Stashed changes
 const modal = document.getElementById("addModal");
 
 document.getElementById("addMovieBtn").onclick = () => {
@@ -99,8 +133,14 @@ document.getElementById("closeModalBtn").onclick = () => {
     modal.style.display = "none";
 };
 
+<<<<<<< Updated upstream
 
 // ADD MOVIE
+=======
+// -----------------------------
+// ADD MOVIE
+// -----------------------------
+>>>>>>> Stashed changes
 document.getElementById("saveMovieBtn").onclick = () => {
     const id = document.getElementById("movieId").value;
     const title = document.getElementById("movieTitle").value;
@@ -118,8 +158,14 @@ document.getElementById("saveMovieBtn").onclick = () => {
     renderMovies();
 };
 
+<<<<<<< Updated upstream
 
 // SEARCH
+=======
+// -----------------------------
+// SEARCH
+// -----------------------------
+>>>>>>> Stashed changes
 document.getElementById("searchBtn").onclick = () => {
     const byTitle = document.getElementById("searchTitle").value;
     const byId = document.getElementById("searchId").value;
@@ -140,8 +186,14 @@ document.getElementById("searchBtn").onclick = () => {
         : "0 results";
 };
 
+<<<<<<< Updated upstream
 
 // SORTING
+=======
+// -----------------------------
+// SORTING
+// -----------------------------
+>>>>>>> Stashed changes
 document.getElementById("sortAZBtn").onclick = () => {
     movieList.sortAZ();
     renderMovies();
@@ -160,6 +212,7 @@ document.getElementById("sortBestBtn").onclick = () => {
 // Refresh button
 document.getElementById("refreshBtn").onclick = renderMovies;
 
+<<<<<<< Updated upstream
 // Coming soon alert.
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -176,5 +229,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+=======
+>>>>>>> Stashed changes
 // Initial page load
 renderMovies();
